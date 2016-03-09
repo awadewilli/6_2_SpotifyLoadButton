@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Like Button</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" class="button" value="button">
+        <div class="loader hidden">Loading...</div>
+        <h5> Submit </h5>
+      </button>
+    </div>
+    <div class="album-container">
+
+    </div>
+    <script id="show_albums" type="text/x-handlebars-template">
+          <div>
+            <img src ={{url}}>
+            <h2>{{album_name}}</h2>
+            <a href={{spotlink}} target="_blank"><span>Play On Spotify</span></a>
+          </div>
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
